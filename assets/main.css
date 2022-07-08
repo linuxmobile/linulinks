@@ -99,6 +99,67 @@ main {
     backdrop-filter: blur(15px) contrast(150%) saturate(180%);
 }
 
+/* timeline */
+section {
+    width: 100%;
+    position: relative;
+    margin: 1em auto;
+}
+
+section > .container {
+    list-style-type: none;
+    border-left: 0.1em solid #000000;
+    padding: 1em 0.3em;
+}
+
+section > .container > .timeline {
+    padding: 1.5em 1.5em;
+    position: relative;
+    transition: .5s;
+}
+
+section > .container > .timeline > span {
+    display:inline-block;
+    background-color: #d31fbb62;
+    border-radius: 1.5em;
+    padding: 2px 0.3em;
+    font-size: 0.9em;
+    text-align: center;
+    color: #000000;
+}
+
+section > .container > .timeline > .content > h2 {
+    color: #1784cc;
+    font-size: 1.1em;
+    margin: 0;
+    padding-top: 0.3em;
+}
+
+section > .container > .timeline > .content > p {
+    padding: 5px 0px 15px 0px;
+    font-size: 0.9em;
+    margin: 0;
+    color: #000000;
+}
+
+section > .container > .timeline > .content > img {
+    height: 1.5em;
+    border-radius: 15px;
+}
+
+section > .container > .timeline::before {
+    position: absolute;
+    content: '';
+    width: 0.6em;
+    height: 0.6em;
+    background-color: #000000;
+    border-radius: 50%;
+    left: -11.5px;
+    top: 1.7em;
+    transition: .5s;
+}
+/* end timeline */
+
 footer {
     font-size: 0.7em;
     text-align: center;
